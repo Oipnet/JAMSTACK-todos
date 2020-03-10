@@ -1,0 +1,15 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Oipnet/JAMSTACK-todos.git",
+  "author": "Arnaud POINTET <arnaud@oipnet.info>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "dotenv": "^8.2.0",
+    "gatsby": "^2.19.35",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0"
+  }
+}
