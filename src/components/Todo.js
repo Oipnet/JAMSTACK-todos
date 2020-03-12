@@ -15,13 +15,27 @@ const Todo = ({ todo, reloadTodos }) => {
 
     reloadTodos();
   };
+  const handleDeleteTodo = async event => {
+    event.preventDefault();
+
+    await axios.post('/api/delete-todo', {
+      id: todo._id
+    });
+
+    reloadTodos();
+  };
   return (
-    <p
-      className={`${styles.text} ${todo.completed && styles.completed}`}
-      onClick={handleUpdateTodo}
-    >
-      {todo.text}
-    </p>
+    <>
+      <p
+        className={`${styles.text} ${todo.completed && styles.completed}`}
+        onClick={handleUpdateTodo}
+      >
+        {todo.text}
+      </p>
+      <a href="#" onClick={handleDeleteTodo}>
+        Delete
+      </a>
+    </>
   );
 };
 

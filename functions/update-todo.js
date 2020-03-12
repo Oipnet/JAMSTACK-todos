@@ -1,6 +1,6 @@
 const sendQuery = require('./utils/send-query');
 const UPDATE_TODO = `
-  mutation($text: String!, $id: ID!, $completed: Boolean){
+  mutation($text: String!, $id: ID!, $completed: Boolean!){
     updateTodo(
       id: $id,
       data: {
