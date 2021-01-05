@@ -6,7 +6,7 @@
   "author": "Arnaud POINTET <arnaud@oipnet.info>",
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.19.35",
     "react": "^16.13.0",
